@@ -11,4 +11,6 @@
 	<li>Exception Handling</li>
 	<li>[Project] Graham Scan - Convex Hull Algorithm</li>
 	<li>[Project] ITF Web Scrape</li>
+	<li>Interface implementation</li>
+	<li>Generic class demonstration</li>
 </ul>
