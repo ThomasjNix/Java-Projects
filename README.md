@@ -6,5 +6,9 @@
 
 <h4>Projects:</h4>
 <ul>
-	<li>To be added...</li>
+	<li>[Project] Hello World</li>
+	<li>Polymorphism</li>
+	<li>Exception Handling</li>
+	<li>[Project] Graham Scan - Convex Hull Algorithm</li>
+	<li>[Project] ITF Web Scrape</li>
 </ul>
