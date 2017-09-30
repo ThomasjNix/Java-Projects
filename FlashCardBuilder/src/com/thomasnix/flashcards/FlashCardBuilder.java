@@ -6,7 +6,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class FlashCardBuilder {
 
@@ -147,7 +152,19 @@ public class FlashCardBuilder {
     class SaveMenuItemListener implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e){
-            System.out.println("Save menu item clicked!");
+
+            // Save current card
+            FlashCard saveCard = new FlashCard(jTextQuestion.getText(), jTextAnswer.getText());
+            cardList.add(saveCard);
+
+            // Create JFileChooser to allow user to save to file
+            JFileChooser jFileSave = new JFileChooser();
+            jFileSave.showSaveDialog(jFrame);
+            try {
+                saveFile(jFileSave.getSelectedFile());
+            } catch (IOException err) {
+                System.out.println("Error encountered while saving:\n\t" + err.getMessage());
+            }
         }
     }
 
@@ -156,5 +173,24 @@ public class FlashCardBuilder {
         jTextQuestion.setText("");
         jTextAnswer.setText("");
         jTextQuestion.requestFocus();
+    }
+
+    private void saveFile(File selectedFile) throws IOException{
+        // Create BufferedWriter and iterate over cardList, write to file
+        try{
+            BufferedWriter fileBW = new BufferedWriter(new FileWriter(selectedFile));
+            Iterator<FlashCard> flashCardIterator = cardList.iterator();
+
+            while (flashCardIterator.hasNext()){
+                FlashCard nextCard = (FlashCard) flashCardIterator.next();
+                String QAString = nextCard.getQuestion() + "/" + nextCard.getAnswer();
+                fileBW.write(QAString);
+                fileBW.newLine();
+            }
+
+            fileBW.close();
+        }catch(Exception e){
+            System.out.println("Error encountered while saving:\n\t" + e.getMessage());
+        }
     }
 }
