@@ -13,4 +13,7 @@
 	<li>[Project] ITF Web Scrape</li>
 	<li>Interface implementation</li>
 	<li>Generic class demonstration</li>
+	<li>File I/O</li>
+	<li>[Project] Swing Frames and Labels</li>
+	<li>[<strong>Large Project</strong>] Swing Flash Card Project</li>
 </ul>
