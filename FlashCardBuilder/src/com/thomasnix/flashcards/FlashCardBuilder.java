@@ -17,6 +17,8 @@ public class FlashCardBuilder {
 
 
     FlashCardBuilder(){
+        // Instantiate FlashCard ArrayList
+        cardList = new ArrayList<FlashCard>();
 
         // Set up frame
         jFrame = new JFrame("Flash Card");
@@ -117,7 +119,15 @@ public class FlashCardBuilder {
     class NextCardListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e){
-            System.out.println("Button clicked!");
+            // Create new FlashCard instance
+            FlashCard newCard = new FlashCard(jTextQuestion.getText(), jTextQuestion.getText());
+            cardList.add(newCard);
+
+            clearCard();
+
+            // Console log newest entry
+            System.out.println("Size of Array List: " + cardList.size());
+            System.out.println("Newest entry:\n\t" + cardList.get(cardList.size()-1).getQuestion() + ":\t" + cardList.get(cardList.size()-1).getAnswer());
         }
     }
 
@@ -139,5 +149,12 @@ public class FlashCardBuilder {
         public void actionPerformed(ActionEvent e){
             System.out.println("Save menu item clicked!");
         }
+    }
+
+    private void clearCard(){
+        // Clear frame content on card add
+        jTextQuestion.setText("");
+        jTextAnswer.setText("");
+        jTextQuestion.requestFocus();
     }
 }

@@ -15,18 +15,19 @@
       <file leaf-file-name="FlashCardBuilder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/thomasnix/flashcards/FlashCardBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="139" column="54" lean-forward="false" selection-start-line="139" selection-start-column="54" selection-end-line="139" selection-end-column="54" />
+            <state relative-caret-position="363">
+              <caret line="129" column="49" lean-forward="true" selection-start-line="129" selection-start-column="49" selection-end-line="129" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3597#3598#0" expanded="true" />
-                <element signature="e#3651#3652#0" expanded="true" />
-                <element signature="e#3847#3848#0" expanded="true" />
-                <element signature="e#3908#3909#0" expanded="true" />
-                <element signature="e#4096#4097#0" expanded="true" />
-                <element signature="e#4164#4165#0" expanded="true" />
-                <element signature="e#4354#4355#0" expanded="true" />
-                <element signature="e#4423#4424#0" expanded="true" />
+                <element signature="method#FlashCardBuilder#0;class#FlashCardBuilder#0" expanded="false" />
+                <element signature="method#main#0;class#FlashCardBuilder#0" expanded="false" />
+                <element signature="e#3687#3688#0" expanded="true" />
+                <element signature="e#3741#3742#0" expanded="true" />
+                <element signature="class#NewMenuItemListener#0;class#FlashCardBuilder#0" expanded="false" />
+                <element signature="e#4608#4609#0" expanded="true" />
+                <element signature="e#4676#4677#0" expanded="true" />
+                <element signature="e#4866#4867#0" expanded="true" />
+                <element signature="e#4935#4936#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -35,9 +36,18 @@
       <file leaf-file-name="FlashCard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/thomasnix/flashcards/FlashCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <element signature="e#242#243#0" expanded="true" />
+                <element signature="e#273#274#0" expanded="true" />
+                <element signature="e#321#322#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#394#395#0" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#467#468#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -245,12 +255,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1506785432454</updated>
-      <workItem from="1506785434849" duration="3617000" />
+      <workItem from="1506785434849" duration="4402000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3617000" />
+    <option name="totallyTimeSpent" value="4402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -288,32 +298,44 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/thomasnix/flashcards/FlashCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thomasnix/flashcards/FlashCardBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="139" column="54" lean-forward="false" selection-start-line="139" selection-start-column="54" selection-end-line="139" selection-end-column="54" />
+        <state relative-caret-position="363">
+          <caret line="129" column="49" lean-forward="true" selection-start-line="129" selection-start-column="49" selection-end-line="129" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3597#3598#0" expanded="true" />
-            <element signature="e#3651#3652#0" expanded="true" />
-            <element signature="e#3847#3848#0" expanded="true" />
-            <element signature="e#3908#3909#0" expanded="true" />
-            <element signature="e#4096#4097#0" expanded="true" />
-            <element signature="e#4164#4165#0" expanded="true" />
-            <element signature="e#4354#4355#0" expanded="true" />
-            <element signature="e#4423#4424#0" expanded="true" />
+            <element signature="method#FlashCardBuilder#0;class#FlashCardBuilder#0" expanded="false" />
+            <element signature="method#main#0;class#FlashCardBuilder#0" expanded="false" />
+            <element signature="e#3687#3688#0" expanded="true" />
+            <element signature="e#3741#3742#0" expanded="true" />
+            <element signature="class#NewMenuItemListener#0;class#FlashCardBuilder#0" expanded="false" />
+            <element signature="e#4608#4609#0" expanded="true" />
+            <element signature="e#4676#4677#0" expanded="true" />
+            <element signature="e#4866#4867#0" expanded="true" />
+            <element signature="e#4935#4936#0" expanded="true" />
           </folding>
         </state>
       </provider>
