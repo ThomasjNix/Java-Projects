@@ -16,4 +16,12 @@
 	<li>File I/O</li>
 	<li>[Project] Swing Frames and Labels</li>
 	<li>[<strong>Large Project</strong>] Swing Flash Card Project</li>
+	<li>[Multi-part] (MySQL / JConnector) Connecting to a MySQL Database:
+		<ul>
+			<li>Writing to a database</li>
+			<li>Reading from a database</li>
+			<li>Updating an index of a database</li>
+			<li>Deleting from a database</li>
+		</ul>
+	</li>
 </ul>
