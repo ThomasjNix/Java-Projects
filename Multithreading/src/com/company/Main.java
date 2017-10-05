@@ -4,20 +4,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Create two threads
-        MyThread aNewThread = new MyThread("Thread0");
-        Thread newThread1 = new Thread(aNewThread);
-        MyThread aNewThread2 = new MyThread("Thread1");
-        Thread newThread2 = new Thread(aNewThread2);
+        // Create 5 threads
+        for (int i = 0; i < 10; i++) {
+            new MyThread("Thread"+i);
+        }
 
-        // First thread will run, second will run only once first finished executing (thread terminates)
-        newThread1.run();
-        newThread2.run();
+
     }
 }
 
 class MyThread implements Runnable{
 
+    private Thread thread;
     String threadName;
     @Override
     public void run() {
@@ -32,7 +30,13 @@ class MyThread implements Runnable{
         }
     }
 
+    // New thread will be created from constructor, will immediately start
+    // This allows threads to be created and started asynchronously, as they each begin as soon
+    // as the instantiation statement is completed
     public MyThread(String thread){
+        this.thread = new Thread(this, thread);
+        this.thread.start();
+
         this.threadName = thread;
     }
 }
