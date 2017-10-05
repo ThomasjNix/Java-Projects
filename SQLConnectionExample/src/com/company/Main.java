@@ -17,6 +17,7 @@ public class Main {
         writeToDB();
         readFromDB();
         updateDB("Updated", "User", "updated1995","0000 Updated ST", 99, 5);
+        deleteUserFromDB(1);
 
     }
 
@@ -75,6 +76,20 @@ public class Main {
             preparedStatement.executeUpdate();
             preparedStatement.close();
         }catch(SQLException e){
+            System.out.println("Exception encountered:\n\t" + e.getMessage());
+        }
+    }
+
+    public static void deleteUserFromDB(int id){
+        String query = "DELETE FROM user WHERE userid = ?";
+
+        try{
+            PreparedStatement preparedStatement = (PreparedStatement) connection.prepareStatement(query);
+            preparedStatement.setInt(1, id);
+            preparedStatement.execute();
+            preparedStatement.close();
+
+        }catch (SQLException e){
             System.out.println("Exception encountered:\n\t" + e.getMessage());
         }
     }
